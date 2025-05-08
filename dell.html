@@ -1,0 +1,644 @@
+﻿<html>
+<head>
+<title>website</title>
+<style>
+*{font-family: phetsarath OT;}
+</style>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   <script src="bootstrap/js/jquery.min.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+	    <nav class="navbar navbar-expand-md bg-info navbar-dark">
+<table border="0">
+<tr>
+<th>
+<font face="phetsarath OT">
+<script>
+          var t=new Date();
+          var d=t.getDay();
+		  var today = new Date();
+          document.write("ມື້ນີ້ແມ່ນວັນ: ");
+if(d==0){
+document.write("ອາທິດ");
+}
+else if(d==1){
+document.write("ຈັນ");
+}
+else if(d==2){
+document.write("ອັງຄານ");
+}
+else if(d==3){
+document.write("ພຸດ");
+}
+else if(d==4){
+document.write("ພະຫັດ");
+}
+else if(d==5){
+document.write("ສຸກ");
+}
+else if(d==6){
+document.write("ເສົາ");
+}
+else{
+document.write("ຜິດພາດ");
+}
+</script>
+</th>
+<th>&nbsp;</th>
+<th>
+<font face="phetsarath OT">ວັນທີ:</font></th>
+<th>
+<font color="white">
+<script>
+today=new Date();
+d=today.getDate();
+m=today.getMonth()+1;
+y=today.getFullYear();
+document.write( +d+ "." +m+ "." +y);
+</script>
+</font>
+</font>
+</th>
+<th>&nbsp;</th>
+<th>
+<font face="phetsarath OT">ເວລາ:</font>
+</th>
+<th>
+<font color="white">
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+</font>
+</th>
+</tr>
+</table>
+        </nav>
+        <nav class="navbar navbar-expand-md bg-info navbar-dark">
+ <marquee><h4><b><font color="red">ຍີນດີຕ້ອນຮັບເຂົ້າສູ່ຮ້ານຂາຍຄອມພີວເຕີຂອງພວກເຮົາ</font><font color="black"> ຂອງການພັດທະນາຮ້ານຂາຍຄອມພີວເຕິ</font></b></h4></marquee>
+		</nav>
+        <nav class="navbar navbar-expand-md bg-danger navbar-dark">
+		  <a class="navbar-brand" href="index.html" title="ໜ້າຫຼັກ">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+  <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+</svg> ໜ້າຫຼັກ</a>
+		    <!-- ຄຳສັ່ງສ້າງປຸ່ 3 ຂີດ -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#call">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- navbar link -->
+			   <div class="collapse navbar-collapse" id="call">
+			     <ul class="navbar-nav">
+				     <li class="nav-item dropdown">
+					   <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" title="ຫຼຸ້ນຄອມ">ຫຼຸ້ນຄອມ</a>
+					     <div class="dropdown-menu">
+						   <a class="dropdown-item" href="acer.html">acer</a>
+						   <a class="dropdown-item" href="asus.html">asus</a>
+						   <a class="dropdown-item" href="hp.html">hp</a>
+						   <a class="dropdown-item" href="lenovo.html">lenovo</a>
+						   <a class="dropdown-item" href="dell.html">dell</a>
+						 </div>
+					 </li>
+					  <li class="nav-item">
+					     <a class="nav-link" href="ຄີບອດ.html" title="ຄີບອດ">ຄີບອດ</a>
+					  </li>
+					  <li class="nav-item">
+					     <a class="nav-link" href="ເມົ້າ.html" title="ເມົ້າ">ເມົ້າ</a>
+					  </li>
+					  <li class="nav-item">
+					     <a class="nav-link" href="USB.html" title="USB">USB</a>
+					  </li>
+				 </ul>
+			   </div>
+		</nav>
+    </div>
+    <br>
+<div class="container-fluid">
+   <div class="row">
+	<div class="col-md-4">
+	
+	<!------------ // ເປິດສະໄລ້ໂຊ // -------------->
+	
+	
+	
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-dark"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active bg-dark"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active bg-dark"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="3" class="active bg-dark"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="acer.html"><img src="salaizo/acer.png" class="d-block w-100" alt="..."></a>
+	</div>
+	
+	
+    <div class="carousel-item">
+      <a href="usb.html"><img src="salaizo/usb.png" class="d-block w-100" alt="...">
+    </div>
+	
+	
+    <div class="carousel-item">
+      <a href="lenovo.html"><img src="salaizo/lenovo.png" class="d-block w-100" alt="...">
+    </div>
+	
+	
+	<div class="carousel-item">
+      <a href="asus.html"><img src="salaizo/asus.png" class="d-block w-100" alt="...">
+    </div>
+	
+	
+	<div class="carousel-item">
+      <a href="ເມົ້າ.html"><img src="salaizo/mouse.png" class="d-block w-100" alt="...">
+    </div>
+	
+	
+	<div class="carousel-item">
+      <a href="hp.html"><img src="salaizo/hp.png" class="d-block w-100" alt="...">
+    </div>
+	
+	
+	<div class="carousel-item">
+      <a href="ຄີບອດ.html"><img src="salaizo/keyboard.png" class="d-block w-100" alt="...">
+    </div>
+	
+	
+	<div class="carousel-item">
+      <a href="dell.html"><img src="salaizo/dell.png" class="d-block w-100" alt="...">
+    </div>
+	
+	
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon  bg-dark" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon  bg-dark" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+  <!------------ // ປິດສະໄລ້ໂຊ // -------------->
+  
+  
+  
+	    <!-- modal body -->
+        <div class="modal-content">
+	   <div class="modal-header bg-danger">
+		     <h5 title="ສີນຄ້າຄອມ"><font color="white"> ສີນຄ້າຄອມ </font></h5>
+			 
+			 <!----------- // ຈຳປາ // -------------->
+			 <div class="nav-item">
+					     <img src="com.png" width="60" height="auto" align="right"></img>
+			 </div>
+			 <!----------- // ຈຳປາ // -------------->
+		   </div>
+		     <div class="modal-body alert-danger">
+			    <ul class="navbar-nav">
+					  <li class="nav-item">
+					     <a class="dropdown-item" href="acer.html">acer</a>
+					  </li>
+					  <li class="nav-item">
+					     <a class="dropdown-item" href="asus.html">asus</a>
+					  </li>
+					  <li class="nav-item">
+					     <a class="dropdown-item" href="hp.html">hp</a>
+					  </li>
+					  <li class="nav-item">
+					     <a class="dropdown-item" href="lenovo.html">lenovo</a>
+					  </li>
+					  <li class="nav-item">
+					     <a class="dropdown-item" href="dell.html">dell</a>
+					  </li>
+				 </ul>
+			 </div>
+		</div>
+	</div>
+	 <div class="col-md-8">
+	  <!-- ບ່ອນສະແດງເນື້ອໃນຂອງເລື່ອງ -->
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-4"><img src="dell/vpuc0p.jpg" title="Dell Inspiron 5468 " width="280px" height="auto"><br>
+<h6><b>Dell Inspiron 5468 </b></h6><br>
+<h6>
+<b>CPU:</b> Intel Core i7-7500U (2.70 up to 2.90GHz)<br>
+<b>Chipset:</b> HM76 Express Chipset<br>
+<b>Memory:</b> 4 GB<br>
+<b>Hard Disk:</b> 1000GB 5400 rpm SATA <br>
+<b>Graphics:</b> 620<br>
+<b><font color="red">AMD Radeon R7 M440/2GB</font></b><br>
+<b>Display:</b> 14 inch (1366x768)Battery 40 WHr, 4-Cell Battery<br>
+<b>Weight:</b> 2.40KG<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">5,980,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">5,650,000</font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+
+
+<div class="col-md-4"><img src="dell/dell-vostro-desktop-computer-500x500.jpg" title="Dell Optiplex 7010 MT" width="280px" height="auto"><br>
+<h6><b>Dell Optiplex 7010 MT </b></h6><br>
+<h6>
+<b>CPU:</b> Intel Core I7-3770 3.4 GHz<br>
+<b>Memory:</b> 4 GB <br>
+<b>Hard Disk:</b> 500GB<br>
+Intel HD Graphics<br>
+<b>Monitor:</b> 20”<br>
+<b>Free:</b> Keyboard & Mouse<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">4,580,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">4,380,000</font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+
+
+<div class="col-md-4"><img src="dell/3470-dell-vostro-desktop-computer-500x500.jpg" title="DELL Vostro V3470-W268014206THW10" width="240px" height="auto"><br>
+<h6><b>DELL Vostro V3470-W268014206THW10</b></h6><br>
+<h6>
+<b>CPU:</b> Intel Core i3-9100 (6M Cache, 4.20 GHz)<br>
+<b>RAM:</b> 4GB DDR4 2666MHz<br>
+<b>Hard Disk:</b> 1000GB<br>
+Intel UHD Graphics 630<br>
+<b>Monitor:</b> 19.5'' DELL E2016HV <br>
+<b>Network:</b> 10/100/1000 LAN<br>
+<b>Wireless:</b> Wireless 802.11b/g/n<br>
+<b>Free:</b> Keyboard & Mouse<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">5,680,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">5,296,000</font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+</div>
+
+
+<div class="row">
+<div class="col-md-4"><img src="dell/dell-vostro-desktop-computer-500x500.jpg" title="Dell Optiplex 3040 0" width="280px" height="auto"><br>
+<h6><b>Dell Optiplex 3040 </b></h6><br>
+<h6>
+<b>CPU:</b> Intel Core i3-6100 (3.70GHz)<br>
+<b>Memory:</b> 4 GB <br>
+<b>Hard Disk:</b> 1000GB<br>
+<b><font color="red">Intel HD Graphics 530</font></b><br>
+<b>Monitor:</b> 18.5”<br>
+<b>Free:</b> Keyboard & Mouse<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">4,180,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">3,780,000 </font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+
+
+<div class="col-md-4"><img src="dell/unnamed (1).jpg" title="Dell Optiplex 7010 MT" width="240px" height="auto"><br>
+<h6><b>Dell Optiplex 7010 MT</b></h6><br>
+<h6>
+<b>CPU:</b> Intel Core i5-3470(3.20GHz)<br>
+<b>Memory:</b> 4 GB <br>
+<b>Hard Disk:</b> 500GB<br>
+<b><font color="red">Intel HD Graphics</font></b><br>
+<b>Monitor:</b> 18.5”<br>
+<b>Free:</b> Keyboard & Mouse<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">4,680,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">4,180,000 </font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+
+
+<div class="col-md-4"><img src="dell/dell-desktop-computer-500x500.png" title="Dell Optiplex 980" width="250px" height="auto"><br>
+<h6><b>Dell Optiplex 980</b></h6><br>
+<h6>
+<b>CPU:</b> Intel Pentium- 3.4 GHz<br>
+<b>Memory:</b> 2 GB <br>
+<b>Hard Disk:</b> 500GB<br>
+<b><font color="red">Intel HD Graphics</font></b><br>
+<b>Monitor:</b> 18.5”<br>
+<b>Free:</b> Keyboard & Mouse<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">2,880,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">2,680,000 </font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+</div>
+
+
+<div class="row">
+<div class="col-md-4"><img src="dell/notebook-dell-inspiron-i14-3443-b30-com-intel-core-i5-520-D_NQ_NP_736021-MLB20689180279_042016-F.jpg" title="Dell  15 3567 (W5655145th)" width="250px" height="auto"><br>
+<h6><b>Dell  15 3567 (W5655145th)</b></h6><br>
+<h6>
+<b>CPU:</b> Intel Core i7-7500U CPU @2.70GHz  up to 3.5GHz<br>
+<b>Memory:</b> 8 GB DDR4<br>
+<b>Hard Disk:</b> 1000GB <br> 
+<b>Graphics:</b> HD 720p<br>
+<b><font color="red">AMD Radeon R5 M430/2GB</font></b><br>
+<b>Display</b> 15.6 inch 1366 x 768 PixelsBattery 4 Hrs<br>
+<b>Weight</b>  2.5 KG<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">6,980,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">6,480,000 </font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+
+
+<div class="col-md-4"><img src="dell/OriginalPng.png" title="Dell Inspiron N5468-W56452290TH " width="320px" height="auto"><br>
+<h6><b>Dell Inspiron N5468-W56452290TH </b></h6><br>
+<h6>
+<b>Processor:</b> Intel Core i5-7200U 2.70GHz<br>
+<b>Memory:</b> 4 GB DDR4 2133 MHz<br>
+<b>Hard Disk:</b> 1000GB<br>
+<b>Graphics:</b> HD 620 <br>
+<b><font color="red">AMD Radeon R7 M440 2GB</font> </b><br>
+<b>Display</b> 14 inch (1366x768)Battery  4-Cell <br>
+<b>Weight</b> 2.40KG<br>
+<b>Order:</b> 930583313<br>
+<b>S/N:</b> BPT9RJ2<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">5,450,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">4,890,000 </font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+
+
+<div class="col-md-4"><img src="dell/713KY3aU3TL._SL1500_.jpg" title="Dell Inspiron N3459 " width="320px" height="auto"><br>
+<h6><b>Dell Inspiron N3459 </b></h6><br>
+<h6>
+<b>Processor:</b> Intel Core i5-6200U 2.40GHz<br>
+<b>Chipset:</b> HM76 Express Chipset<br>
+<b>Memory:</b> 4 GB 1600 MHz DDR3L <br>
+<b>Hard Disk:</b> 500GB 5400 rpm SATA<br> 
+<b>Graphics:</b> HD 520 VGA<br>
+<b><font color="red">AMD Radeon R5M315/2GB</font></b><br>
+<b>NO </b> DVD<br>
+<b>Display</b> 14 inch (1366x768)Battery  4-Cell <br>
+<b>Weight</b> 2.40KG<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">5,250,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">4,650,000 </font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+</div>
+
+
+<div class="row">
+<div class="col-md-4"><img src="dell/xkwm1a.jpg" title="Dell Inspiron 3576" width="300px" height="auto"><br>
+<h6><b>Dell Inspiron 3576</b></h6><br>
+<h6>
+<b>CPU :</b> Intel Core i5-8250U<br>
+<b>RAM :</b> 4GB DDR4 <br>
+<b>HDD :</b> 1TB <br>
+<b>Graphics :</b> AMD Radeon 520 2GB <br>
+<b>Display :</b> 15.6 inch FHD <br>
+<b>OS :</b> Windows 10 Home 64bitBattery  40 WHr, 4-Cell Battery (removable) <br>
+<b>Weight</b> 2.30KG<br>
+<b>Order:</b>930653212<br>
+<b>S/N:</b> 6YJ6YN2<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">5,980,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">5,680,000 </font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+
+
+<div class="col-md-4"><img src="dell/Dell_Inspiron_15_3542_L_1.jpg" title="Dell Inspiron 14-5448" width="280px" height="auto"><br>
+<h6><b>Dell Inspiron 14-5448</b></h6><br>
+<h6>
+<b>Processor:</b> Intel Core i5-5200U 2.20GHz<br>
+<b>Chipset:</b> HM76 Express Chipset<br>
+<b>Memory:</b> 4 GB 1600 MHz DDR3L<br> 
+<b>Hard Disk:</b> 500GB 5400 rpm SATA <br>
+<b>Graphics:</b> HD 5500<br>
+<b><font color="red">AMD Radeon R7 M265/4GB</font></b><br>
+<b>NO</b>  DVD<br>
+<b>Display</b> 14 inch (1366x768)Battery  4-Cell <br>
+<b>Weight</b> 2.40KG<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">5,599,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">4,880,000 </font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+
+
+<div class="col-md-4"><img src="dell/718lJq05TnL._SX466_.jpg" title="Dell Inspiron 5488-W58452284TH" width="280px" height="auto"><br>
+<h6><b>Dell Inspiron 5488-W58452284TH</b></h6><br>
+<h6>
+<b>CPU:</b> Intel Core i3-6006U
+<b>RAM:</b> 4GB DDR4 2133Hz
+<b>Hard Disk:</b> 1000 GB  
+<b>Graphics:</b> HD 520
+<b>Display</b> 14 inch (1366x768)Battery  4-Cell 
+<b>Weight</b> 1.94KG
+<b>OS :</b> Windows 10
+<b>Order:</b> 930581676
+<b>S/N:</b> 1WDMGH2
+<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">4,250,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">3,888,000 </font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+</div>
+
+
+
+<div class="row">
+<div class="col-md-4"><img src="dell/i-dell-inspiron-5590-15-6-i7-16gb-256gb-1tb-win10-55905987.jpg" title="Dell N3467-W5641104RTH" width="280px" height="auto"><br>
+<h6><b>Dell N3467-W5641104RTH</b></h6><br>
+<h6>
+<b>Processor:</b> Intel Core i5-7200U (2.70 GHz)<br>
+<b>Memory:</b> 4 GB DDR4 <br>
+<b>Hard Disk:</b> 500GB 5400 rpm SATA <br>
+<b>Graphics:</b> HD 620<br>
+<b><font color="red">AMD radeon R5 M430</font></b><br>
+<b>Display</b> 14 inch (1366x768)Battery  4-Cell <br>
+<b>Weight</b> 1.94KG<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">5,450,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">4,999,000 </font> ກີບ</b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+
+
+<div class="col-md-4"><img src="dell/5ad62f2aec6a6_2jpg.jpg" title="Dell Inspiron N3467" width="300px" height="auto"><br>
+<h6><b>Dell Inspiron N3467</b></h6><br>
+<h6>
+<b>CPU:</b> Intel Core i3-6006U ( 2.0 GHz)<br>
+<b>RAM:</b> 4 GB<br> 
+<b>Hard Disk:</b> 1000GB<br>  
+<b>Graphics:</b> HD 520<br>
+<b>Display</b> 14 inch (1366x768)Battery  4-Cell<br> 
+<b>Weight</b> 1.94KG<br>
+<b>S/N:</b> 550C3L2<br>
+<b>Order:</b> 930603461<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">4,150,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">3,788,000 </font> ກີບ</b><br>
+<b><font color="red">ພ້ອມບໍລິການລົງວິນໂດ ລົງໂປຣແກຣມ ຂ້າໄວຣັດຟຣີ 1 ປີ</font></b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+
+
+<div class="col-md-4"><img src="dell/lenovo-ideapad-s10-3-59-038564-z.jpg" title="Dell Inspiron N3467" width="240px" height="auto"><br>
+<h6><b>Dell Inspiron N3467</b></h6><br>
+<h6>
+<b>Processor:</b> Intel Core i3-6006U ( 2.0 GHz)<br>
+<b>Memory:</b> 4 GB <br>
+<b>Hard Disk:</b> 1000GB <br> 
+<b>Graphics:</b> HD 620<br>
+<b>Display</b> 14 inch (1366x768)Battery  4-Cell <br>
+<b>Weight</b> 1.94KG<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">4,150,000</font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">3,800,000 </font> ກີບ</b><br>
+<b><font color="red">ພ້ອມບໍລິການລົງວິນໂດ ລົງໂປຣແກຣມ ຂ້າໄວຣັດຟຣີ 1 ປີ</font></b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+</div>
+
+
+<div class="row">
+<div class="col-md-4"><img src="dell/61mlo81rxxL._AC_SX425_.jpg" title="Dell Inspiron N3467-W5645103TH" width="240px" height="auto"><br>
+<h6><b>Dell Inspiron N3467-W5645103TH</b></h6><br>
+<h6>
+<b>CPU:</b> Intel Core i3-6006U ( 2.0 GHz)<br>
+<b>RAM:</b> 4 GB <br>
+<b>HDD:</b> 500GB  <br>
+<b>Graphics:</b> HD 520<br>
+<b><font color="red">AMD radeon R5 M330</font></b><br>
+<b>Display</b> 14 inch (1366x768)Battery  4-Cell <br>
+<b>Weight</b> 1.94KG<br>
+<b>Order:</b> 930589735<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">4,250,000 </font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">3,980,000 </font> ກີບ</b><br>
+<b><font color="red">ພ້ອມບໍລິການລົງວິນໂດ ລົງໂປຣແກຣມ ຂ້າໄວຣັດຟຣີ 1 ປີ</font></b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+
+
+
+<div class="col-md-4"><img src="dell/Dell-Inspiron-5468-i7-7th-Generation-3.jpg" title="Dell Inspiron" width="280px" height="auto"><br>
+<h6><b>Dell Inspiron</b></h6><br>
+<h6>
+<b>Processor:</b> Intel Core i7-6500U (2.50GHz, 2.59GHz)<br>
+<b>Memory:</b> 8 GB DDR3<br>
+<b>Hard Disk:</b> 1000 GB  <br>
+<b>Graphics:</b> HD 520<br>
+<b>Display</b> 14 inch (1366x768)Battery  4-Cell <br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">5,550,000 </font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">4,999,000 </font> ກີບ</b><br>
+<b><font color="red">ພ້ອມບໍລິການລົງວິນໂດ ລົງໂປຣແກຣມ ຂ້າໄວຣັດຟຣີ 1 ປີ</font></b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+
+
+
+<div class="col-md-4"><img src="dell/dell inspiron 5448.jpg" title="Dell Inspiron 3467" width="280px" height="auto"><br>
+<h6><b>Dell Inspiron 3467</b></h6><br>
+<h6>
+<b>Processor:</b> Intel Core i7-7500U (2.90GHz)<br>
+<b>Memory:</b> 4 GB DDR3<br>
+<b>Hard Disk:</b> 1000 GB  <br>
+<b>Graphics:</b> HD 620<br>
+<b><font color="red">AMD Radeon R5 M330 2GB</font></b><br>
+<b>Display</b> 14 inch (1366x768)Battery  4-Cell<br>
+<b>ລາຄາປົກກະຕິ: <del><font color="red">6,450,000 </font></del> ກີບ</b><br>
+<b>ລາຄາຂາຍ: <font color="blue">5,880,000 </font> ກີບ</b><br>
+<b><font color="red">ພ້ອມບໍລິການລົງວິນໂດ ລົງໂປຣແກຣມ ຂ້າໄວຣັດຟຣີ 1 ປີ</font></b><br>
+<a href="ສັ່ງຊື້.html"><button type="button" class="btn-warning">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg> ສັ່ງຊື້</button></a></h6>
+</img></div>
+</div>
+</div>
+</div>
+    </div>
+   </div>
+           <nav class="navbar navbar-expand-md bg-secondary navbar-dark" title="Student, BCT college">
+            <!-- ຕີນເວັບໄຊ້ -->
+                  <div class="col-md-4">
+						    <ul class="navbar-nav">
+					  <li class="nav-item">
+					     <a class="dropdown-item" href="acer.html" title="acer">acer</a>
+					  </li>
+					  <li class="nav-item">
+					     <a class="dropdown-item" href="asus.html" title="asus">asus</a>
+					  </li>
+					  <li class="nav-item">
+					     <a class="dropdown-item" href="hp.html" title="hp">hp</a>
+					  </li>
+					  <li class="nav-item">
+					     <a class="dropdown-item" href="lenovo.html" title="lenovo">lenovo</a>
+					  </li>
+					  <li class="nav-item">
+					     <a class="dropdown-item" href="dell.html" title="dell">dell</a>
+					  </li>
+				 </ul>
+				 </div>
+			<div class="col-md-8">
+<font color="white"><div class="footer-copyright text-right">
+<span>2019 - 2020 Student, BCT college</span><br>
+<span>Design Develop by: Mr.khuelee lee</span>
+</div></font>
+</div>
+		</nav>
+</div>
+</body>
+</html>
